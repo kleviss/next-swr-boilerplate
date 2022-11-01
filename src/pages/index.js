@@ -1,7 +1,9 @@
+import React from "react";
 import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/Home.module.css";
-import { useFetch } from "../hooks/useSWR";
+import { useFetch } from "hooks";
+import { DemoComponent, YoutubeComponent } from "components";
 
 export default function Home() {
   // SWR call for all permissions
@@ -23,6 +25,8 @@ export default function Home() {
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
 
+        <DemoComponent />
+        <YoutubeComponent />
         <p className={styles.description}>
           <code className={styles.code}>Here are your todos:</code>
         </p>

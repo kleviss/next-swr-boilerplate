@@ -1,0 +1,13 @@
+//.eslintrc
+{
+  "root": true,
+  "extends": ["next", "next/core-web-vitals"],
+  "globals": {
+    "React": "readonly"
+  },
+  "settings": {
+    "import/resolver": {
+      "babel-module": {}
+    }
+  }
+}
